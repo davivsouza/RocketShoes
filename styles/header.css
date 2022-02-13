@@ -1,37 +1,45 @@
-header{
-  padding: 0.8rem 1rem;
-}
-
-ul{
+header {
+  padding: 1.2rem 0.5rem;
   display: flex;
-  list-style: none;
-  align-items: center;
-  justify-content: space-evenly;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
-ul li{
+
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
+  transition: all 0.1s;
+  margin-right: 5rem;
 }
 
-ul li:hover{
+header nav ul li:hover {
   cursor: pointer;
-  scale: 1.2;
+  transform: scale(1.1);
 }
 
-ul li label{
+header nav ul li label {
   position: relative;
 }
 
-ul li input{
+header nav ul li input {
   padding: 0.3rem 0.4rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.15rem;
   padding-left: 1.8rem;
 }
 
-ul li label img{
+header nav ul li label img {
   width: 20px;
   height: 20px;
   position: absolute;

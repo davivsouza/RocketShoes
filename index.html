@@ -12,32 +12,86 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/header.css" />
+
     <title>RocketShoes</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><img src="./assets/logo.svg" alt="logo" /></li>
-          <li>MAN</li>
-          <li>WOMAN</li>
-          <li>KID</li>
-          <li>CUSTOMIZE</li>
           <li>
-            <label for="search">
-              <input
-                name="search"
-                id="search"
-                type="search"
-                placeholder="search"
-              />
-              <img src="./assets/icon-search.svg" alt="searchIcon">
-            </label>
+            <a href="/"><img src="./assets/logo.svg" alt="logo" /></a>
           </li>
-          <li><img src="./assets/icon-bag.svg" alt="bag" /></li>
+          <li><a href="#">MAN</a></li>
+          <li><a href="#">WOMAN</a></li>
+          <li><a href="#">KID</a></li>
+          <li><a href="#">CUSTOMIZE</a></li>
+          <li>
+            <a href="">
+              <label for="search">
+                <input
+                  name="search"
+                  id="search"
+                  type="search"
+                  placeholder="search"
+                />
+                <img src="./assets/icon-search.svg" alt="searchIcon" />
+              </label>
+            </a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/icon-bag.svg" alt="bag" /></a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section id="shoesPriceContainer">
+        <h1>Sport Running Shoes</h1>
+        <p class="description">
+          This shoes has the purpose of leaving you more fitness, focused, and
+          muscled.
+        </p>
+        <strong class="price">R$ 1.000,00</strong>
+        <button class="buy">BUY NOW</button>
+      </section>
+      <section id="shoesGallery">
+        <div id="amplifiedShoe">
+          <img src="./assets/tenis-1-ampliado.png" alt="Shoe Amplified" />
+        </div>
+        <div class="gallerySlider">
+          <img src="./assets/tenis-1-galeria.png" alt="Shoes gallery" />
+          <img
+            src="./assets/tenis-2-galeria.png"
+            alt="Shoes gallery"
+            class="focusedShoe"
+          />
+          <img src="./assets/tenis-3-galeria.png" alt="Shoes gallery" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="footerNav">
+        <ul>
+          <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YPaGjO8n5lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <li><a href="#">FACEBOOK</a></li>
+          <li><a href="#">INSTAGRAM</a></li>
+          <li><a href="#">TWITTER</a></li>
+          <li class="exploreMore">
+            <a href="#"
+              >EXPLORE MAIS
+              <span
+                ><img src="./assets/icon-arrow.svg" alt="explore more" /></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,86 @@
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+}
+
+#shoesPriceContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px;
+  max-width: 40%;
+}
+
+#shoesPriceContainer h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+}
+
+.description{
+  color: var(--text-description);
+  font-family:"Roboto", sans-serif ;
+}
+
+.price{
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #000;
+
+}
+
+.buy{
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  padding: 1.5rem 1.2rem;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  transition: all .1s;
+}
+.buy:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+#shoesGallery{
+  width: 70%;
+  gap: 20px;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  
+}
+
+#amplifiedShoe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#amplifiedShoe img{
+  width: 400px;
+  display: block;
+}
+
+.gallerySlider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallerySlider img{
+  width: 200px;
+  height: 150px;
+}
+.gallerySlider img.focusedShoe{
+  border-bottom: 5px solid #ff0000;
+}
