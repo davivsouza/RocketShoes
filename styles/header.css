@@ -7,7 +7,11 @@ header {
   z-index: 2;
 }
 
-
+.hamburguerMenu,
+.hamburguerBtn{
+  display: none;
+  visibility: hidden;
+}
 
 header nav ul {
   display: flex;
@@ -18,7 +22,7 @@ header nav ul {
 header nav ul li {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1vw, 1.2rem);
   transition: all 0.1s;
   margin-right: 5rem;
 }
@@ -46,4 +50,76 @@ header nav ul li label img {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* responsividade  */
+
+/* laptop 1024px */
+@media  (max-width:1024px){
+  header{
+    padding: 1rem 0.3rem;
+    
+  }
+
+  header nav ul li {
+    margin-right: 2rem;
+  }
+}
+
+/* tablet */
+@media (max-width:768px){
+  .navbar ul li{
+    margin-right: 1.2rem;
+  }
+  .navbar ul li label input{
+    width: 200px;
+  }
+}
+
+/* mobile */
+@media (max-width:425px){
+  
+  .hamburguerMenu, 
+  .hamburguerBtn {
+    display: flex;
+    visibility: visible;
+  }
+  .hamburguerBtn{
+    width: 40px;
+    height: 4px;
+
+    border-radius: 10px;
+    background: #000;
+    position: relative;
+    right: -70vw;
+    margin-top: 30px;
+  }
+  .hamburguerBtn::before,
+  .hamburguerBtn::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+  }
+  .hamburguerBtn::before{
+    top: -10px;
+  }
+  .hamburguerBtn::after{
+    top: 10px;
+  }
+  
+
+  .hamburguerMenu ul{
+    display: none;
+    visibility: hidden;
+  }
+  
+  .navbar{
+    display: none;
+    visibility: hidden;
+  }
+  
+  
 }

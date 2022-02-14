@@ -4,6 +4,7 @@ footer{
   justify-content: center;
   max-height: 200px;
   overflow: hidden;
+  background-color: var(--background);
 }
 
 .footerNav ul{
