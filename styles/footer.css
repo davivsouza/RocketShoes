@@ -47,8 +47,68 @@ footer{
 .footerNav ul .exploreMore a{
   color: #fff;
   font-size: 1.2rem;
-
 }
 .footerNav ul  .exploreMore span img{
   width: 20px;
+}
+
+@media  (max-width:768px){
+  .footerNav ul{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+  }
+  .footerNav ul li{
+    margin-right: 0.5rem;
+   }
+  .footerNav ul .exploreMore{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+  .footerNav ul li a{
+    
+    font-size: 0.8rem;
+  }
+  .footerNav ul .exploreMore a{
+    font-size: 0.8rem;
+  }
+
+  .footerNav ul  .exploreMore span img{
+    width: 15px;
+  }
+}
+
+
+@media (max-width:620px) {
+  footer{
+   width: 100%;
+    margin-top: 200px;
+    overflow: visible;
+  }
+  .footerNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerNav ul li{
+   margin: 0;
+  }
+
+  .footerNav ul li iframe{
+   width: 90%;
+    height: 150px;
+  }
+  
+
+  .footerNav ul .exploreMore{
+    width: 90%;
+  }
+
+
+}
+
+@media (max-width:280px){
+  
 }

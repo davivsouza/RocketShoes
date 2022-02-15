@@ -22,3 +22,10 @@ a {
 body{
   background: var(--main-background);
 }
+
+@media  (max-width:620px){
+
+ body{
+  background: var(--background);
+ }
+ }

@@ -54,8 +54,7 @@ header nav ul li label img {
 
 /* responsividade  */
 
-/* laptop 1024px */
-@media  (max-width:1024px){
+@media  (max-width:1115px){
   header{
     padding: 1rem 0.3rem;
     
@@ -66,8 +65,7 @@ header nav ul li label img {
   }
 }
 
-/* tablet */
-@media (max-width:768px){
+@media (max-width:1025px){
   .navbar ul li{
     margin-right: 1.2rem;
   }
@@ -76,8 +74,7 @@ header nav ul li label img {
   }
 }
 
-/* mobile */
-@media (max-width:425px){
+@media (max-width:660px){
   
   .hamburguerMenu, 
   .hamburguerBtn {
@@ -91,7 +88,7 @@ header nav ul li label img {
     border-radius: 10px;
     background: #000;
     position: relative;
-    right: -70vw;
+    right: -38vw;
     margin-top: 30px;
   }
   .hamburguerBtn::before,
